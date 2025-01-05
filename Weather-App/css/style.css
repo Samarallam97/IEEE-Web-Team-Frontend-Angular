@@ -1,0 +1,40 @@
+.main{
+    background-image: url("../images/Premium\ Photo\ _\ Abstract\ polygonal\ space\ low\ poly\ dark\ background\,\ 3d\ rendering.jpeg");
+    background-position: center;
+    background-size: cover;
+    min-height: 100vh;
+}
+
+
+.card{
+    border: none;
+    height: 370px;
+    
+}
+
+.card-body{
+    background-color: #3199AB;
+    transition: .3s;
+}
+
+.card-header{
+    background-color: #374850;
+}
+
+
+#card2 .card-body
+{
+background-color: #88C4CF;
+}
+
+
+#card2:hover .card-body{
+background-color: #3199AB;
+}
+
+
+footer{
+    background-color: #3199AB;
+    padding: 10px;
+}
+

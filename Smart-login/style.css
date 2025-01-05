@@ -1,0 +1,13 @@
+.box , .page{
+    background-color: #22343F;
+}
+
+.page{
+    min-height: 100vh;
+}
+
+input::placeholder{
+    color: white !important;
+    opacity: .5 !important;
+    
+}
