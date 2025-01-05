@@ -1,0 +1,51 @@
+you give the customer a guide line for uploading content (images size)
+
+grid is better for responsive
+
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
+  gap: 40px;
+
+// fill
+
+
+.features .passion a {
+  color: #03a9f4;
+  border-color: #03a9f4;
+  background: linear-gradient(to right, #03a9f4 50%, white 50%);
+  background-size: 200% 100%;
+  background-position: right bottom;
+}
+.features .box:hover a {
+  background-position: left bottom;
+  color: white;
+}
+
+// triangle
+
+.features .image::before{
+  content: "";
+  position: absolute;
+  width:0px;
+  height: 0px;
+  right: 0;
+  bottom:9px;
+  border-style:solid ;
+  border-width: 0px 0px 170px 700px;;
+  border-color: transparent transparent white transparent;
+ transition: var(--main-transition);
+ z-index: 3;
+}
+
+
+
+.features .box:hover .image::before{
+  border-width: 170px 700px 170px 0;
+
+}
+
+
+// title z-index
+
+
+frontend problems => team section

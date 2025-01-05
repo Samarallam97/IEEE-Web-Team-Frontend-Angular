@@ -1,0 +1,427 @@
+/* google font */
+/* nunito */
+@import url('https://fonts.googleapis.com/css2?family=Nunito+Sans:opsz,wght@6..12,200;6..12,300;6..12,400&family=Poppins:wght@100;200;300;400;500;600;800;900&family=Roboto:wght@100;300;400;500;700;900&display=swap');
+/* rubik */
+@import url('https://fonts.googleapis.com/css2?family=Rubik:wght@400;500;600;700;800;900&display=swap');
+
+body{
+    font-family: 'Nunito Sans', sans-serif;
+}
+h1,h2,h3,h4,h5,h6{
+    font-family: 'Rubik', sans-serif;
+}
+
+:root{
+    --main-color:rgb(228, 45, 13);
+}
+
+
+/* navbar */
+.navbar-nav .nav-link{
+    transition: 0.3s;
+}
+.navbar-nav .nav-link.active , .navbar-nav .nav-link:hover{
+    color: var(--main-color);
+    font-weight: 900;
+}
+
+/* landing */
+
+/* .landing1 .text ,.landing2 .text{
+transition: 1s 1s;
+} */
+
+
+
+.landing1{
+    background-image: url("../images/header-bg.jpg");
+background-attachment: fixed;
+background-position: center;
+background-size: cover;
+/* min-height: 100vh; */
+}
+
+.landing2{
+    background-image: url("../images/about.jpg");
+background-attachment: fixed;
+background-position: center;
+background-size: cover;
+/* min-height: 100vh; */
+}
+
+
+
+.landing1 .download ,.container .download {
+    all:unset;
+    display: inline-block;
+    padding: 15px 25px;
+    border: 2px solid white;
+    border-radius: 50px;
+    transition: .5s;
+    
+}
+
+.landing1 .download:hover , .container .download:hover{
+    background-color: white;
+    color: black;
+}
+
+
+.landing1 .down , .container .down{
+    width: 30px;
+    height: 50px;
+    border-radius: 50px;
+    border: 3px solid white;
+    background-color: transparent;
+    position: absolute;
+    bottom: 30px;
+    left: 50%;
+    transform: translateX(-50%);
+    animation: bouncing 1s linear  infinite ;
+    opacity: 1;
+}
+
+.carousel-item .text{
+ opacity: 0;
+ transition: 2s .3s;
+}
+
+.carousel-item.active .text{
+ opacity: 1;
+}
+
+
+/* bouncing animation */
+
+@keyframes bouncing {
+    0%{
+        bottom: 30px;
+        opacity: 1;
+    }
+    50%{
+bottom: 50px;
+opacity: .5;
+    }
+}
+
+/* 
+
+.carousel-item {
+    transition: 2s;
+} */
+
+.landing1 .down::after ,.container .down::after {
+    content: "";
+    position: absolute;
+    width: 3px;
+    height: 10px;
+    left: 50%;
+    transform: translateX(-50%);
+    bottom: 10px;
+    background-color: white;
+}
+
+
+.landing1 h1::after{
+content: "";
+animation:animate1 7s linear infinite;
+}
+
+/* aniamtion */
+
+@keyframes animate1 {
+    0% {
+       content: "K";
+    }
+    5% {
+       content: "KE";
+    }
+    9% {
+       content: "KER";
+    }
+    14% {
+       content: "KERR";
+    }
+   18% {
+       content: "KERRI";
+    }
+    23% {
+       content: "KERRI ";
+    }
+    27% {
+       content: "KERRI D";
+    }
+    32% {
+       content: "KERRI DO";
+    }
+    36% {
+       content: "KERRI DOE";
+    }
+    41% {
+       content: "KERRI DOE.";
+    }
+    45% {
+       content: "KERRI DOE..";
+    }
+    50% {
+       content: "KERRI DOE";
+    }
+    54% {
+       content: "KERRI DO";
+    }
+    59% {
+       content: "KERRI D";
+    }
+    63% {
+       content: "KERRI ";
+    }
+    68% {
+       content: "KERRI";
+    }
+    75% {
+       content: "KERR";
+    }
+    84% {
+       content: "KER";
+    }
+    92% {
+       content: "KE";
+    }
+    100% {
+       content: "K";
+    }
+    
+ }
+
+ .landing2 h1::after{
+    content: "";
+    animation:animate2 7s linear infinite;
+ }
+
+@keyframes animate2{
+ 6% {
+    content: "J";
+ }
+ 12% {
+    content: "JO";
+ }
+ 18% {
+    content: "JOH";
+ }
+ 24% {
+    content: "JOHN";
+ }
+ 30% {
+    content: "JOHN D";
+ }
+ 36% {
+    content: "JOHN DO";
+ }
+ 42% {
+    content: "JOHN DOE";
+ }
+ 48% {
+    content: "JOHN DOE.";
+ }
+ 54% {
+    content: "JOHN DOE..";
+ }
+ 60% {
+    content: "JOHN DOE.";
+ }
+ 66% {
+    content: "JOHN DOE";
+ }
+ 72% {
+    content: "JOHN DO";
+ }
+ 78% {
+    content: "JOHN D";
+ }
+ 84% {
+    content: "JOHN ";
+ }
+ 90% {
+    content: "JOHN";
+ }
+93% {
+    content: "JOH";
+ }
+ 96% {
+    content: "JO";
+ }
+ 100% {
+    content: "J";
+ }
+
+}
+/* fixed elements */
+
+.setting{
+    position: fixed;
+    left: 0;
+    top: 30%;
+    color: white;
+    padding: 5px 10px;
+    background-color: black;
+    border-radius: 0 5px 5px 0;
+    z-index: 10000000000000;
+}
+
+.up{
+    position: fixed;
+   right: 10px;
+  bottom: 10px;
+    color: white;
+    padding: 5px 10px;
+    background-color: var(--main-color);
+    border-radius:5px;
+    z-index: 10000000000000;
+}
+
+/* about */
+
+.about .social li{
+    transition: 0.5s;
+}
+
+
+.about .social li:hover{
+ color: var(--main-color);
+ border-color: var(--main-color)!important;
+  
+}
+
+
+
+/* client */
+
+.client{
+    padding-bottom: 100px;
+}
+
+.client .carousel-indicators {
+    bottom: -40px;
+}
+
+.client .carousel-indicators [data-bs-target] {
+    height: 5px;
+    background-color: var(--main-color);
+    border: unset;
+    border-radius: 5px;
+    transition: 0.3s;
+}
+
+
+.client .carousel-indicators .active{
+    width: 50px;
+}
+
+
+.client .carousel-item i,.client .carousel-item img,.client .carousel-item q,.client .carousel-item p{
+    opacity: 0;
+transition: 1s;
+ 
+} 
+
+
+.client .carousel-item img{
+    transition-delay: 0.2s;
+}
+ 
+.client .carousel-item q{
+    transition-delay: 0.5s;
+}
+ 
+
+.client .carousel-item p {
+    transition-delay: .7s;
+}
+
+
+ .client .carousel-item.active i , .client .carousel-item.active img , .client .carousel-item.active q ,.client .carousel-item.active p{
+    opacity: 1;
+} 
+ 
+/* services */
+
+.services .text::before{
+content: "";
+position: absolute;
+width: 60px;
+height: 3px;
+left: 50%;
+bottom: -5px;
+background-color: var(--main-color);
+transform: translateX(-50%);
+transition: .5s;
+}
+
+.services .col:hover .text::before{
+    width: 100px;
+}
+
+/* portfolio */
+
+
+.nav-pills .nav-link{
+    color: black;
+    padding: 3px 15px;
+    border-radius: 50px;
+}
+
+.nav-pills .nav-link.active ,.nav-pills .nav-link:hover{
+    background-color: var(--main-color);
+    color: white;
+}
+
+.porfolio .image {
+position: relative;
+}
+
+.porfolio .image::before{
+content: "";
+position: absolute;
+left: 0;
+top: 0;
+background-color: black;
+width: 100%;
+height: 100%;
+opacity: 0;
+transition:opacity 0.5s 0.3s;
+z-index: 99;
+} 
+
+.porfolio .image:hover::before{
+    opacity: 50%;
+  
+    /* top: 0; */
+}
+.porfolio .image img{
+transition: 0.5s;
+}
+.porfolio .image:hover img{
+    transform: scale(1.2);
+}
+
+
+
+.porfolio .layer {
+    position: relative;
+}
+
+.porfolio .text{
+position: absolute;
+text-align: center;
+top:150%;
+left: 50%;
+transform: translate(-50% , -50%);
+color: white;
+/* opacity: 0; */
+transition: 0.5s 0.2s;
+z-index: 100;
+}
+
+.porfolio .image:hover + .text{
+    top:50%
+}

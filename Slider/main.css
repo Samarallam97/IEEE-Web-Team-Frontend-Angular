@@ -1,0 +1,494 @@
+@import url("https://fonts.googleapis.com/css?family=DM+Sans:400,500,700&display=swap");
+
+* {
+  box-sizing: border-box;
+}
+
+html, body {
+  margin: 0;
+  padding: 0;
+  width: 100%;
+  height: 100%;
+}
+
+body {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 30px 10px;
+  font-family: 'DM Sans', sans-serif;
+}
+
+
+
+.card {
+  position: absolute;
+  width: 200px;
+  height: 200px;
+  left: 0;
+  right: 0;
+  margin: auto;
+  transition: transform .4s ease;
+  cursor: pointer;
+}
+
+.container {
+  width: 950px;
+  max-width: 100000000px;
+  max-height: 500px;
+  height: 100%;
+  transform-style: preserve-3d;
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+  align-items: center;
+  overflow-x: hidden;
+ 
+}
+.container input{
+  opacity: 0;
+}
+.cards {
+  position: relative;
+  width: 100%;
+  height: 100%;
+  margin-bottom: 20px;
+}
+
+img {
+  width: 100%;
+  height: 100%;
+  border-radius: 50%;
+  object-fit: cover;
+}
+
+#item-1:checked ~ .cards #client-2{
+  transform: translatex(-200px) scale(.8);
+  opacity: .4;
+  z-index: 0;
+}
+#item-1:checked ~ .cards #client-3{
+  transform: translatex(-380px) scale(.8) ;
+  opacity: .4;
+  z-index: 0;
+}
+#item-1:checked ~ .cards #client-4 {
+  transform: translatex(-560px) scale(.8);
+  opacity: .4;
+  z-index: 0;
+}
+
+#item-1:checked ~ .cards #client-5 {
+  transform: translatex(-740px) scale(.8);
+  opacity: .4;
+  z-index: 0;
+}
+#item-1:checked ~ .cards #client-6 {
+  transform: translatex(740px) scale(.8);
+  opacity: .4;
+  z-index: 0;
+}
+
+#item-1:checked ~ .cards #client-7{
+  transform: translatex(560px) scale(.8) ;
+  opacity: .4;
+  z-index: 0;
+}
+#item-1:checked ~ .cards #client-8{
+  transform: translatex(380px) scale(.8);
+  opacity: .4;
+  z-index: 0;
+}
+#item-1:checked ~ .cards #client-9{
+  transform: translatex(200px) scale(.8);
+  opacity: .4;
+  z-index: 0;
+}
+
+
+
+
+
+#item-2:checked ~ .cards #client-3{
+  transform: translatex(-200px) scale(.8);
+  opacity: .4;
+  z-index: 0;
+}
+#item-2:checked ~ .cards #client-4{
+  transform: translatex(-380px) scale(.8) ;
+  opacity: .4;
+  z-index: 0;
+}
+#item-2:checked ~ .cards #client-5 {
+  transform: translatex(-560px) scale(.8);
+  opacity: .4;
+  z-index: 0;
+}
+
+#item-2:checked ~ .cards #client-6 {
+  transform: translatex(-740px) scale(0);
+  opacity: .4;
+  z-index: 0;
+}
+#item-2:checked ~ .cards #client-7 {
+  transform: translatex(740px) scale(.8);
+  opacity: .4;
+  z-index: 0;
+}
+
+#item-2:checked ~ .cards #client-8{
+  transform: translatex(560px) scale(.8) ;
+  opacity: .4;
+  z-index: 0;
+}
+#item-2:checked ~ .cards #client-9{
+  transform: translatex(380px) scale(.8);
+  opacity: .4;
+  z-index: 0;
+}
+#item-2:checked ~ .cards #client-1{
+  transform: translatex(200px) scale(.8);
+  opacity: .4;
+  z-index: 0;
+}
+
+
+
+
+
+#item-3:checked ~ .cards #client-4{
+  transform: translatex(-200px) scale(.8);
+  opacity: .4;
+  z-index: 0;
+}
+#item-3:checked ~ .cards #client-5{
+  transform: translatex(-380px) scale(0.8) ;
+  opacity: .4;
+  z-index: 0;
+}
+#item-3:checked ~ .cards #client-6{
+  transform: translatex(-560px) scale(0);
+  opacity: .4;
+  z-index: 0;
+}
+
+#item-3:checked ~ .cards #client-7 {
+  transform: translatex(-740px) scale(.8);
+  opacity: .4;
+  z-index: 0;
+}
+#item-3:checked ~ .cards #client-8{
+  transform: translatex(740px) scale(.8);
+  opacity: .4;
+  z-index: 0;
+}
+
+#item-3:checked ~ .cards #client-9{
+  transform: translatex(560px) scale(.8) ;
+  opacity: .4;
+  z-index: 0;
+}
+#item-3:checked ~ .cards #client-1{
+  transform: translatex(380px) scale(.8);
+  opacity: .4;
+  z-index: 0;
+}
+#item-3:checked ~ .cards #client-2{
+  transform: translatex(200px) scale(.8);
+  opacity: .4;
+  z-index: 0;
+}
+
+
+
+
+#item-4:checked ~ .cards #client-5{
+  transform: translatex(-200px) scale(.8);
+  opacity: .4;
+  z-index: 0;
+}
+#item-4:checked ~ .cards #client-6{
+  transform: translatex(-380px) scale(0.8) ;
+  opacity: .4;
+  z-index: 0;
+}
+#item-4:checked ~ .cards #client-7{
+  transform: translatex(-560px) scale(.8);
+  opacity: .4;
+  z-index: 0;
+}
+
+#item-4:checked ~ .cards #client-8{
+  transform: translatex(-740px) scale(.8);
+  opacity: .4;
+  z-index: 0;
+}
+#item-4:checked ~ .cards #client-9{
+  transform: translatex(740px) scale(.8);
+  opacity: .4;
+  z-index: 0;
+}
+
+#item-4:checked ~ .cards #client-1{
+  transform: translatex(560px) scale(.8) ;
+  opacity: .4;
+  z-index: 0;
+}
+#item-4:checked ~ .cards #client-2{
+  transform: translatex(380px) scale(.8);
+  opacity: .4;
+  z-index: 0;
+}
+#item-4:checked ~ .cards #client-3{
+  transform: translatex(200px) scale(.8);
+  opacity: .4;
+  z-index: 0;
+}
+
+
+
+#item-5:checked ~ .cards #client-6{
+  transform: translatex(-200px) scale(.8);
+  opacity: .4;
+  z-index: 0;
+}
+#item-5:checked ~ .cards #client-7{
+  transform: translatex(-380px) scale(0.8) ;
+  opacity: .4;
+  z-index: 0;
+}
+#item-5:checked ~ .cards #client-8{
+  transform: translatex(-560px) scale(.8);
+  opacity: .4;
+  z-index: 0;
+}
+
+#item-5:checked ~ .cards #client-9{
+  transform: translatex(-740px) scale(.8);
+  opacity: .4;
+  z-index: 0;
+}
+#item-5:checked ~ .cards #client-1{
+  transform: translatex(740px) scale(.8);
+  opacity: .4;
+  z-index: 0;
+}
+
+#item-5:checked ~ .cards #client-2{
+  transform: translatex(560px) scale(.8) ;
+  opacity: .4;
+  z-index: 0;
+}
+#item-5:checked ~ .cards #client-3{
+  transform: translatex(380px) scale(.8);
+  opacity: .4;
+  z-index: 0;
+}
+#item-5:checked ~ .cards #client-4{
+  transform: translatex(200px) scale(.8);
+  opacity: .4;
+  z-index: 0;
+}
+
+
+
+
+
+#item-6:checked ~ .cards #client-7{
+  transform: translatex(-200px) scale(.8);
+  opacity: .4;
+  z-index: 0;
+}
+#item-6:checked ~ .cards #client-8{
+  transform: translatex(-380px) scale(0.8) ;
+  opacity: .4;
+  z-index: 0;
+}
+#item-6:checked ~ .cards #client-9{
+  transform: translatex(-560px) scale(.8);
+  opacity: .4;
+  z-index: 0;
+}
+
+#item-6:checked ~ .cards #client-1{
+  transform: translatex(-740px) scale(.8);
+  opacity: .4;
+  z-index: 0;
+}
+#item-6:checked ~ .cards #client-2{
+  transform: translatex(740px) scale(.8);
+  opacity: .4;
+  z-index: 0;
+}
+
+#item-6:checked ~ .cards #client-3{
+  transform: translatex(560px) scale(.8) ;
+  opacity: .4;
+  z-index: 0;
+}
+#item-6:checked ~ .cards #client-4{
+  transform: translatex(380px) scale(.8);
+  opacity: .4;
+  z-index: 0;
+}
+#item-6:checked ~ .cards #client-5{
+  transform: translatex(200px) scale(.8);
+  opacity: .4;
+  z-index: 0;
+}
+
+
+
+#item-7:checked ~ .cards #client-8{
+  transform: translatex(-200px) scale(.8);
+  opacity: .4;
+  z-index: 0;
+}
+#item-7:checked ~ .cards #client-9{
+  transform: translatex(-380px) scale(0.8) ;
+  opacity: .4;
+  z-index: 0;
+}
+#item-7:checked ~ .cards #client-1{
+  transform: translatex(-560px) scale(.8);
+  opacity: .4;
+  z-index: 0;
+}
+
+#item-7:checked ~ .cards #client-2{
+  transform: translatex(-740px) scale(.8);
+  opacity: .4;
+  z-index: 0;
+}
+#item-7:checked ~ .cards #client-3{
+  transform: translatex(740px) scale(.8);
+  opacity: .4;
+  z-index: 0;
+}
+
+#item-7:checked ~ .cards #client-4{
+  transform: translatex(560px) scale(.8) ;
+  opacity: .4;
+  z-index: 0;
+}
+#item-7:checked ~ .cards #client-5{
+  transform: translatex(380px) scale(.8);
+  opacity: .4;
+  z-index: 0;
+}
+#item-7:checked ~ .cards #client-6{
+  transform: translatex(200px) scale(.8);
+  opacity: .4;
+  z-index: 0;
+}
+
+
+
+#item-8:checked ~ .cards #client-9{
+  transform: translatex(-200px) scale(.8);
+  opacity: .4;
+  z-index: 0;
+}
+#item-8:checked ~ .cards #client-1{
+  transform: translatex(-380px) scale(0.8) ;
+  opacity: .4;
+  z-index: 0;
+}
+#item-8:checked ~ .cards #client-2{
+  transform: translatex(-560px) scale(.8);
+  opacity: .4;
+  z-index: 0;
+}
+
+#item-8:checked ~ .cards #client-3{
+  transform: translatex(-740px) scale(.8);
+  opacity: .4;
+  z-index: 0;
+}
+#item-8:checked ~ .cards #client-4{
+  transform: translatex(740px) scale(.8);
+  opacity: .4;
+  z-index: 0;
+}
+
+#item-8:checked ~ .cards #client-5{
+  transform: translatex(560px) scale(.8) ;
+  opacity: .4;
+  z-index: 0;
+}
+#item-8:checked ~ .cards #client-6{
+  transform: translatex(380px) scale(.8);
+  opacity: .4;
+  z-index: 0;
+}
+#item-8:checked ~ .cards #client-7{
+  transform: translatex(200px) scale(.8);
+  opacity: .4;
+  z-index: 0;
+}
+
+
+
+
+#item-9:checked ~ .cards #client-1{
+  transform: translatex(-200px) scale(.8);
+  opacity: .4;
+  z-index: 0;
+}
+#item-9:checked ~ .cards #client-2{
+  transform: translatex(-380px) scale(0.8) ;
+  opacity: .4;
+  z-index: 0;
+}
+#item-9:checked ~ .cards #client-3{
+  transform: translatex(-560px) scale(.8);
+  opacity: .4;
+  z-index: 0;
+}
+
+#item-9:checked ~ .cards #client-4{
+  transform: translatex(-740px) scale(.8);
+  opacity: .4;
+  z-index: 0;
+}
+#item-9:checked ~ .cards #client-5{
+  transform: translatex(740px) scale(.8);
+  opacity: .4;
+  z-index: 0;
+}
+
+#item-9:checked ~ .cards #client-6{
+  transform: translatex(560px) scale(.8) ;
+  opacity: .4;
+  z-index: 0;
+}
+#item-9:checked ~ .cards #client-7{
+  transform: translatex(380px) scale(.8);
+  opacity: .4;
+  z-index: 0;
+}
+#item-9:checked ~ .cards #client-8{
+  transform: translatex(200px) scale(.8);
+  opacity: .4;
+  z-index: 0;
+}
+
+
+#item-1:checked ~ .cards #client-1, #item-2:checked ~ .cards #client-2, #item-3:checked ~ .cards #client-3 , #item-4:checked ~ .cards #client-4,#item-5:checked ~ .cards #client-5,#item-6:checked ~ .cards #client-6,#item-7:checked ~ .cards #client-7,#item-8:checked ~ .cards #client-8,#item-9:checked ~ .cards #client-9{
+  transform: translatex(0) scale(1);
+  opacity: 1;
+  z-index: 1;
+  
+  
+} 
+
+.card{
+transition: translate;
+}
+
+
+
+
+
+
+

@@ -1,0 +1,263 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@100;200;300;400;500;600;800;900&display=swap');
+
+
+/* navbar */
+/* .navbar .active{
+  position: relative;
+}
+.navbar .active::before{
+content: "";
+position: absolute;
+width: 50px;
+height: 3px;
+left: 5px;
+margin: auto;
+bottom: 0;
+background-color: white;
+}
+ */
+
+ .nav-link {
+  position: relative;
+  overflow: hidden;
+ }
+
+ .nav-link::before {
+  content: "";
+  position: absolute;
+  width: 80%;
+  margin: auto;
+  height: 3px;
+  left: -100%;
+  margin: auto;
+  bottom: 0;
+  background-color: white;
+  transition: 0.6s;
+ }
+
+
+ .nav-link.active::before{
+  left:5px;
+ }
+
+
+
+
+
+
+
+ /* landing */
+ .landing{
+   background-image: url("../images/home.jpg");
+   background-position: center;
+   background-size: cover;
+   /* height:calc(100vh - 72px); */
+   height: 100%;
+ }
+
+
+ /* about */
+ /* services */
+ .services .card .icon{
+  width: 100px;
+  height: 100px;
+  background-color:white ;
+  margin: auto;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border-radius: 50%;
+  margin-bottom: 30px;
+  box-shadow: 0 0 0 10px #09c;
+  font-size: 30px;
+  transition: all 0.3s;
+ }
+
+ .services .card{
+  padding-block: 20px;
+ }
+
+ .services .card:hover .icon{
+  box-shadow: 0 0 0 10px rgba(0, 153, 204, 0.418);
+  background-color:#09c ;
+  color: white;
+ }
+
+ .title{
+position: relative;
+margin-bottom: 40px;
+ }
+
+ .title::after{
+  content: "";
+  position: absolute;
+  width: 100px;
+  height: 5px;
+  background-color: #09c;
+  top:90%;
+  left: 50%;
+  transform: translateX(-50%);
+
+ }
+
+ .counter{
+  background-image: url("../images/counters-bg.jpg");
+  background-position: center;
+  background-size: cover;
+  background-attachment: fixed;
+  color: white;
+  min-height: 70vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  position: relative;
+  color: rgb(220 224 228);
+  font-weight:500;
+ }
+
+ .counter::before{
+  content: "";
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  left: 0;
+  top: 0;
+  background-color: rgb(53 103 243 / 60%);
+ 
+}
+
+.counter .icon{
+  background-color: transparent;
+  border: 10px solid rgb(220 224 228);;
+  width: 60px;
+  height: 60px;
+  border-radius: 50%;
+  margin: auto;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+
+/* portfolio */
+
+.portfolio .text>span{
+  color:rgb(48, 81, 246);
+  width: 30px;
+  height: 40px;
+  border: 5px solid rgb(48, 81, 246);
+  border-radius: 50%;
+ /* position: relative;
+ left: calc(100% - 30px);
+ bottom: 40px; */
+}
+
+.portfolio .row img{
+  filter: grayscale(100%);
+  transition: all 0.5s;
+}
+
+.portfolio .col:hover img{
+  filter: grayscale(0) brightness(120%);
+  transform: scale(1.1);
+}
+
+.portfolio .person{
+  background-image: url("../images/overlay-bg.jpg");
+  background-position: center;
+  background-size: cover;
+  background-attachment: fixed;
+  min-height: 90vh;
+  position: relative;
+}
+
+.portfolio .person::after{
+content: "";
+position: absolute;
+width: 100%;
+height: 100%;
+top: 0;
+left: 0;
+background-color: rgb(0 67 255 / 50%);
+}
+
+
+.portfolio .person img{
+  border-radius: 50%;
+}
+.portfolio .person .end img{
+  width: 50px;
+}
+.portfolio .person .end img:last-of-type{
+opacity:.7;
+}
+
+/* slider */
+
+
+.portfolio .carousel-indicators [data-bs-target]:first-of-type{
+  width: 40px;
+  height: 40px;
+  border-radius: 50%;
+  background-image: url("../images/testimonial-2.jpg");
+  background-size: cover;
+  background-position: center;
+}
+
+.portfolio .carousel-indicators [data-bs-target]:last-of-type{
+  width: 40px;
+  height: 40px;
+  border-radius: 50%;
+  background-image: url("../images/testimonial-4.jpg");
+  background-size: cover;
+  background-position: center;
+}
+
+.portfolio .carousel-indicators{
+  bottom: -100px;
+}
+
+.portfolio .carousel-item >*{
+  transform: scale(0);
+  transition: 1s;
+}
+.portfolio .carousel-item.active >*{
+  transform: scale(1);
+}
+/* blog */
+
+/* contact */
+
+.contact{
+  background-image: url("../images/overlay-bg.jpg");
+  background-position: center;
+  background-size: cover;
+
+
+}
+
+
+/* 
+.contact .layer{
+  content: "";
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  top: 0;
+  left: 0;
+ 
+  background-color: rgb(0 67 255 / 50%);
+  } */
+
+  /* .contact .container{
+    z-index: 3;
+    background-color:black;
+  } */
+
+
+
+  .contact .msg input:focus, .contact .msg textarea:focus{
+outline: none;
+border: 0.5px;
+box-shadow: 0 0 0 4px  rgb(0 67 255 / 50%);
+  }
